@@ -9,17 +9,33 @@ import './MyChatbot.css';
 import { useGoogleLogin } from '@react-oauth/google';
 
 
-
 const MyChatbot = () => {
-    const login = useGoogleLogin({
-        onSuccess: tokenResponse => console.log(tokenResponse),
-        // Configure additional options as needed
-    });
-
     return (
         <div className='floating-chatbot'>
-            <button onClick={() => login()}>Login with Google</button>
-            {/* Render Chatbot or other components based on login status */}
+            <Chatbot
+                config={config}
+                messageParser={MessageParser}
+                actionProvider={ActionProvider}
+            />
         </div>
     );
 };
+
+export default MyChatbot;
+
+// In your MyChatbot.js or a similar component where you want the login button
+// Google login part
+
+// const MyChatbot = () => {
+//     const login = useGoogleLogin({
+//         onSuccess: tokenResponse => console.log(tokenResponse),
+//         // Configure additional options as needed
+//     });
+
+//     return (
+//         <div className='floating-chatbot'>
+//             <button onClick={() => login()}>Login with Google</button>
+//             {/* Render Chatbot or other components based on login status */}
+//         </div>
+//     );
+// };

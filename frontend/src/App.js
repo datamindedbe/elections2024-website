@@ -5,16 +5,19 @@ import Chatbot from 'react-chatbot-kit'
 import Heading from '@theme/Heading';
 import styles from './components/HomepageFeatures/styles.module.css';
 import MyChatbot from './chatbot/MyChatbot'; 
-import { GoogleOAuthProvider } from '@react-oauth/google';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <GoogleOAuthProvider clientId="109614037501-v8jkqtrma68dihbpv51fqj4dhkk9ojsc.apps.googleusercontent.com">
-      <App />
-    </GoogleOAuthProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// Google login
+// import { GoogleOAuthProvider } from '@react-oauth/google';
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <GoogleOAuthProvider clientId="109614037501-v8jkqtrma68dihbpv51fqj4dhkk9ojsc.apps.googleusercontent.com">
+//       <App />
+//     </GoogleOAuthProvider>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 
 
